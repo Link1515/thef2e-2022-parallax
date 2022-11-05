@@ -6,7 +6,11 @@ module.exports = {
       center: true,
       padding: '1rem'
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        solid: '10px 10px 0 #000'
+      }
+    },
   },
   plugins: [],
 }

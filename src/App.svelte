@@ -1,3 +1,5 @@
-<div class="container p-1">
-  <h2 class="text-yellow-600">this is title</h2>
-</div>
+<script>
+  import Navbar from './lib/Navbar.svelte'
+</script>
+
+<Navbar />
