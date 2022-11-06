@@ -63,20 +63,24 @@
 <section>
   <div data-aos="fade-down">
     <div class="relative mb-10 grid grid-cols-2 lg:mb-20">
-      <img
-        data-aos="fade-right"
-        data-aos-duration="600"
-        data-aos-delay="500"
-        src="/images/topicInfo/block-red.png"
-        alt="block-red"
-      />
-      <img
-        data-aos="fade-left"
-        data-aos-duration="600"
-        data-aos-delay="1000"
-        src="/images/topicInfo/block-yellow.png"
-        alt="block-yellow"
-      />
+      <div class="overflow-hidden">
+        <img
+          data-aos="fade-right"
+          data-aos-duration="600"
+          data-aos-delay="500"
+          src="/images/topicInfo/block-red.png"
+          alt="block-red"
+        />
+      </div>
+      <div class="overflow-hidden">
+        <img
+          data-aos="fade-left"
+          data-aos-duration="600"
+          data-aos-delay="1000"
+          src="/images/topicInfo/block-yellow.png"
+          alt="block-yellow"
+        />
+      </div>
       <img
         class="absolute-center -mt-2 w-1/3"
         src="/images/topicInfo/block-pink.png"
