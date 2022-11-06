@@ -14,6 +14,7 @@
   import Schedule from './lib/Schedule.svelte'
   import Rules from './lib/Rules.svelte'
   import Sponsers from './lib/Sponsers.svelte'
+  import GoTop from './lib/GoTop.svelte'
 
   // store screen width
   screenWidth.set(window.innerWidth)
@@ -34,3 +35,4 @@
 <Schedule />
 <Rules />
 <Sponsers />
+<GoTop />
