@@ -19,5 +19,5 @@
       </div>
     </div>
   </div>
-  <div class="h-48 bg-decoration-dots bg-cover bg-top bg-no-repeat" />
+  <div class="decoration-dots" />
 </section>

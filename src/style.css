@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .decoration-dots {
+    @apply h-48 bg-decoration-dots bg-cover bg-top bg-no-repeat md:bg-[length:120%_130%] lg:bg-top;
+  }
+}
+
 @layer utilities {
   .absolute-center {
     @apply absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2

@@ -17,7 +17,6 @@
     })
     const tlDesktop = gsap.timeline({
       scrollTrigger: {
-        markers: true,
         trigger: '#topics',
         start: 'top 70%',
         end: 'bottom 70%',
@@ -93,7 +92,7 @@
     </div>
   </div>
   <div id="topics" class="lg:pb-24">
-    <div class="h-48 bg-decoration-dots bg-cover bg-top bg-no-repeat" />
+    <div class="decoration-dots" />
     <div class="container">
       <div class="relative mb-4 pb-36 lg:pb-40">
         <img
