@@ -9,6 +9,9 @@ module.exports = {
     extend: {
       boxShadow: {
         solid: '10px 10px 0 #000'
+      },
+      backgroundImage: {
+        'decoration-dots': 'url("/images/dots.png")'
       }
     },
   },
