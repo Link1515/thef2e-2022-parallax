@@ -18,9 +18,13 @@
       bannerGreenEl,
       bannerLogoEl
     ]
+
     if ($screenWidth >= 1024) {
+      /**
+       * use animate.css at desktop size
+       */
       bannerEls.forEach(el => {
-        el.classList.add('animate__animated')
+        el.classList.add('animate__animated', 'animate__delay-1s')
       })
       bannerBlueEl.classList.add('animate__bounceInLeft')
       bannerYellowEl.classList.add(
@@ -31,13 +35,14 @@
       bannerGreenEl.classList.add('animate__bounceInRight', 'animate__delay-4s')
       bannerLogoEl.classList.add('animate__bounceInDown', 'animate__delay-5s')
     } else {
-      import('aos/dist/aos.css')
-
-      AOS.init({
-        offset: 250,
-        easing: 'ease-out-back',
-        duration: 800
-      })
+      /**
+       * use aos at mobile size
+       */
+      bannerBlueEl.dataset.aos = 'fade-right'
+      bannerYellowEl.dataset.aos = 'fade-left'
+      bannerRedEl.dataset.aos = 'fade-right'
+      bannerGreenEl.dataset.aos = 'fade-left'
+      bannerLogoEl.dataset.aos = 'fade-down'
     }
   })
 </script>
@@ -46,14 +51,12 @@
   <div class="mb-2 grid gap-2 lg:mb-0 lg:grid-cols-2 lg:gap-0">
     <img
       bind:this={bannerBlueEl}
-      data-aos="fade-right"
       src="/images/banner/blue.png"
       alt="banner-blue"
     />
     <img
       bind:this={bannerYellowEl}
       id="banner-yellow"
-      data-aos="fade-left"
       class="ml-auto"
       src="/images/banner/yellow.png"
       alt="banner-yellow"
@@ -63,24 +66,23 @@
     <img
       bind:this={bannerRedEl}
       id="banner-red"
-      data-aos="fade-right"
       src="/images/banner/red.png"
       alt="banner-red"
     />
     <img
       bind:this={bannerGreenEl}
       id="banner-green"
-      data-aos="fade-left"
       class="ml-auto"
       src="/images/banner/green.png"
       alt="banner-green"
     />
   </div>
-  <div class="top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 lg:absolute">
+  <div
+    class="lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2"
+  >
     <img
       bind:this={bannerLogoEl}
       id="banner-logo"
-      data-aos="fade-down"
       class="m-auto"
       src="/images/banner/logo.png"
       alt="banner-logo"
