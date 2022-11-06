@@ -7,6 +7,9 @@ module.exports = {
       padding: '1rem'
     },
     extend: {
+      backgroundColor: {
+        yellow: '#FED641'
+      },
       boxShadow: {
         solid: '10px 10px 0 #000'
       },
