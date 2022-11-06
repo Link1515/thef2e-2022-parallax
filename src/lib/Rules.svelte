@@ -16,9 +16,7 @@
       alt="block-blue"
     />
   </div>
-  <div class="-mt-10">
-    <div class="decoration-dots" />
-  </div>
+  <div class="decoration-dots -mt-10" />
   <a
     href="#aa"
     class="btn-primary mx-auto h-14 w-8/12 text-base lg:h-28 lg:text-[48px] lg:font-bold lg:tracking-widest"

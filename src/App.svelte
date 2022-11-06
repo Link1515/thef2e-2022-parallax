@@ -13,6 +13,7 @@
   import TopicInfo from './lib/TopicInfo.svelte'
   import Schedule from './lib/Schedule.svelte'
   import Rules from './lib/Rules.svelte'
+  import Sponsers from './lib/Sponsers.svelte'
 
   // store screen width
   screenWidth.set(window.innerWidth)
@@ -32,3 +33,4 @@
 <TopicInfo />
 <Schedule />
 <Rules />
+<Sponsers />
