@@ -4,11 +4,13 @@
   // plugins
   import 'aos/dist/aos.css'
   import AOS from 'aos'
+  import Rellax from 'rellax'
 
   // components
   import Navbar from './lib/Navbar.svelte'
   import Banner from './lib/Banner.svelte'
   import Questions from './lib/Questions.svelte'
+  import TopicInfo from './lib/TopicInfo.svelte'
 
   // store screen width
   screenWidth.set(window.innerWidth)
@@ -25,3 +27,4 @@
 <Navbar />
 <Banner />
 <Questions />
+<TopicInfo />
