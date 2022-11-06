@@ -18,8 +18,9 @@
   </div>
   <div class="decoration-dots -mt-10" />
   <a
-    href="#aa"
     class="btn-primary mx-auto h-14 w-8/12 text-base lg:h-28 lg:text-[48px] lg:font-bold lg:tracking-widest"
-    >立即報名</a
+    href="https://2022.thef2e.com/signup"
+    target="_blank"
+    rel="noreferrer">立即報名</a
   >
 </section>
