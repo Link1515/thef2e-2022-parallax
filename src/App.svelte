@@ -4,7 +4,6 @@
   // plugins
   import 'aos/dist/aos.css'
   import AOS from 'aos'
-  import Rellax from 'rellax'
 
   // components
   import Navbar from './lib/Navbar.svelte'

@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply pt-14 lg:pt-0;
+  }
+}
+
 @layer components {
   .btn-primary {
     @apply grid place-items-center font-medium border-4 border-solid border-black text-xs shadow-solid lg:text-base lg:hover:bg-yellow;
