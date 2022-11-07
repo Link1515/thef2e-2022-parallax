@@ -3,14 +3,16 @@
     <img class="w-full" src="/images/rules/block-black.png" alt="block-black" />
   </div>
   <div
-    class="container mt-8 flex flex-col justify-center gap-2 lg:flex-row lg:justify-evenly lg:gap-0"
+    class="container mt-8 flex flex-col justify-center gap-2 overflow-hidden lg:flex-row lg:justify-evenly lg:gap-0"
   >
     <img
+      data-aos="fade-up-right"
       class="z-10 lg:w-1/2"
       src="/images/rules/block-green.png"
       alt="block-green"
     />
     <img
+      data-aos="fade-down-left"
       class="z-10 lg:-ml-12 lg:w-[45%] lg:translate-y-14"
       src="/images/rules/block-blue.png"
       alt="block-blue"
