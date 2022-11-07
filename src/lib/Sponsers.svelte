@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { pathConverter } from '../utils'
+</script>
+
 <section>
   <div class="flex flex-col items-center">
     <p class="mb-4">鑽石級贊助商</p>
@@ -10,7 +14,7 @@
         target="_blank"
         rel="noreferrer"
       >
-        <img src="/images/sponsers/01.png" alt="01" />
+        <img src={pathConverter('/images/sponsers/01.png')} alt="01" />
       </a>
       <a
         data-aos="zoom-out-up"
@@ -19,7 +23,7 @@
         target="_blank"
         rel="noreferrer"
       >
-        <img src="/images/sponsers/02.png" alt="02" />
+        <img src={pathConverter('/images/sponsers/02.png')} alt="02" />
       </a>
       <a
         data-aos="zoom-out-up"
@@ -28,7 +32,7 @@
         target="_blank"
         rel="noreferrer"
       >
-        <img src="/images/sponsers/03.png" alt="03" />
+        <img src={pathConverter('/images/sponsers/03.png')} alt="03" />
       </a>
     </div>
   </div>

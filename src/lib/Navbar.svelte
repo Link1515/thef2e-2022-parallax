@@ -1,6 +1,7 @@
 <script lang="ts">
   import { slide } from 'svelte/transition'
   import { screenWidth } from '../store'
+  import { pathConverter } from '../utils'
 
   let collapse = $screenWidth >= 1024
 
@@ -18,10 +19,10 @@
 <nav class="fixed top-0 left-0 right-0 z-50 bg-white lg:relative">
   <div class="container flex h-12 items-center lg:h-24">
     <a class="logo mr-auto hidden lg:inline-block" href="#hello!">
-      <img src="/images/logo.png" alt="logo" />
+      <img src={pathConverter('/images/logo.png')} alt="logo" />
     </a>
     <div on:click={toggleMenu} class="mr-auto lg:hidden">
-      <img src="/images/burger.png" alt="burger" />
+      <img src={pathConverter('/images/burger.png')} alt="burger" />
     </div>
     {#if collapse}
       <div

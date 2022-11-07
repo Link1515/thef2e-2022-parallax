@@ -1,8 +1,8 @@
 <script lang="ts">
   import { onMount } from 'svelte'
   import { screenWidth } from '../store'
+  import { pathConverter } from '../utils'
   import 'animate.css'
-  import AOS from 'aos'
 
   let bannerBlueEl: HTMLElement,
     bannerYellowEl: HTMLElement,
@@ -51,14 +51,14 @@
   <div class="mb-2 grid gap-2 lg:mb-0 lg:grid-cols-2 lg:gap-0">
     <img
       bind:this={bannerBlueEl}
-      src="/images/banner/blue.png"
+      src={pathConverter('/images/banner/blue.png')}
       alt="banner-blue"
     />
     <img
       bind:this={bannerYellowEl}
       id="banner-yellow"
       class="ml-auto"
-      src="/images/banner/yellow.png"
+      src={pathConverter('/images/banner/yellow.png')}
       alt="banner-yellow"
     />
   </div>
@@ -66,14 +66,14 @@
     <img
       bind:this={bannerRedEl}
       id="banner-red"
-      src="/images/banner/red.png"
+      src={pathConverter('/images/banner/red.png')}
       alt="banner-red"
     />
     <img
       bind:this={bannerGreenEl}
       id="banner-green"
       class="ml-auto"
-      src="/images/banner/green.png"
+      src={pathConverter('/images/banner/green.png')}
       alt="banner-green"
     />
   </div>
@@ -82,7 +82,7 @@
       bind:this={bannerLogoEl}
       id="banner-logo"
       class="m-auto"
-      src="/images/banner/logo.png"
+      src={pathConverter('/images/banner/logo.png')}
       alt="banner-logo"
     />
   </div>

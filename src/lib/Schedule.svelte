@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { pathConverter } from '../utils'
+</script>
+
 <section class="pb-10">
   <div class="decoration-dots" />
   <div class="container">
@@ -27,7 +31,7 @@
     <img
       data-aos="zoom-in"
       class="mx-auto mb-20 hidden lg:block"
-      src="/images/schedule/timeline-desktop.png"
+      src={pathConverter('/images/schedule/timeline-desktop.png')}
       alt="timeline"
     />
     <p class="mx-auto mb-10 w-9/12 lg:w-fit">
@@ -37,7 +41,7 @@
     <img
       data-aos="zoom-in"
       class="mx-auto lg:hidden"
-      src="/images/schedule/timeline-mobile.png"
+      src={pathConverter('/images/schedule/timeline-mobile.png')}
       alt="timeline"
     />
   </div>

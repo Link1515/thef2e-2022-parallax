@@ -2,6 +2,7 @@
   import { onMount } from 'svelte'
   import gsap from 'gsap'
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
+  import { pathConverter } from '../utils'
 
   gsap.registerPlugin(ScrollTrigger)
 
@@ -68,7 +69,7 @@
           data-aos="fade-right"
           data-aos-duration="600"
           data-aos-delay="500"
-          src="/images/topicInfo/block-red.png"
+          src={pathConverter('/images/topicInfo/block-red.png')}
           alt="block-red"
         />
       </div>
@@ -77,20 +78,20 @@
           data-aos="fade-left"
           data-aos-duration="600"
           data-aos-delay="1000"
-          src="/images/topicInfo/block-yellow.png"
+          src={pathConverter('/images/topicInfo/block-yellow.png')}
           alt="block-yellow"
         />
       </div>
       <img
         class="absolute-center -mt-2 w-1/3"
-        src="/images/topicInfo/block-pink.png"
+        src={pathConverter('/images/topicInfo/block-pink.png')}
         alt="block-pink"
       />
     </div>
     <div>
       <img
         class="w-full"
-        src="/images/topicInfo/block-black.png"
+        src={pathConverter('/images/topicInfo/block-black.png')}
         alt="block-black"
       />
     </div>
@@ -101,39 +102,39 @@
       <div class="relative mb-4 pb-36 lg:pb-40">
         <img
           class="relative z-10 opacity-90"
-          src="/images/topicInfo/week1.png"
+          src={pathConverter('/images/topicInfo/week1.png')}
           alt="week1"
         />
         <img
           id="week1-decoration"
           class="absolute right-0 bottom-0 w-7/12 lg:-bottom-24 lg:w-5/12"
-          src="/images/topicInfo/week1-decoration.png"
+          src={pathConverter('/images/topicInfo/week1-decoration.png')}
           alt="week1-decoration"
         />
       </div>
       <div class="relative mb-4 pb-36">
         <img
           class="relative z-10 ml-auto opacity-90"
-          src="/images/topicInfo/week2.png"
+          src={pathConverter('/images/topicInfo/week2.png')}
           alt="week2"
         />
         <img
           id="week2-decoration"
           class="absolute left-0 bottom-0 w-7/12 lg:-bottom-24 lg:w-5/12"
-          src="/images/topicInfo/week2-decoration.png"
+          src={pathConverter('/images/topicInfo/week2-decoration.png')}
           alt="week2-decoration"
         />
       </div>
       <div class="relative mb-4 pb-36">
         <img
           class="relative z-10 opacity-90"
-          src="/images/topicInfo/week3.png"
+          src={pathConverter('/images/topicInfo/week3.png')}
           alt="week3"
         />
         <img
           id="week3-decoration"
           class="absolute right-0 bottom-0 w-7/12 lg:-bottom-24 lg:w-5/12"
-          src="/images/topicInfo/week3-decoration.png"
+          src={pathConverter('/images/topicInfo/week3-decoration.png')}
           alt="week3-decoration"
         />
       </div>

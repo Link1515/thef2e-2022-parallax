@@ -1,6 +1,14 @@
+<script lang="ts">
+  import { pathConverter } from '../utils'
+</script>
+
 <section class="pb-12">
   <div>
-    <img class="w-full" src="/images/rules/block-black.png" alt="block-black" />
+    <img
+      class="w-full"
+      src={pathConverter('/images/rules/block-black.png ')}
+      alt="block-black"
+    />
   </div>
   <div
     class="container mt-8 flex flex-col justify-center gap-2 overflow-hidden lg:flex-row lg:justify-evenly lg:gap-0"
@@ -8,13 +16,13 @@
     <img
       data-aos="fade-up-right"
       class="z-10 lg:w-1/2"
-      src="/images/rules/block-green.png"
+      src={pathConverter('/images/rules/block-green.png')}
       alt="block-green"
     />
     <img
       data-aos="fade-down-left"
       class="z-10 lg:-ml-12 lg:w-[45%] lg:translate-y-14"
-      src="/images/rules/block-blue.png"
+      src={pathConverter('/images/rules/block-blue.png')}
       alt="block-blue"
     />
   </div>
